@@ -57,4 +57,6 @@ while True:
     
     # 19. Display a window for the webcam.
     cv2.imshow("Open My Webcam", theQrCode)
+    # 20. Set the loading time for the window to open.
+    cv2.waitKey(1)
     
