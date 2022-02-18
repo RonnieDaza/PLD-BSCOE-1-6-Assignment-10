@@ -33,3 +33,5 @@ while True:
         print(theCode.data.decode("utf-8"))
         # 10. Add a bounding box. For here, we will use a polygon. Convert the polygon into an array. Use np.int32.
         thePoints = np.array([theCode.polygon], np.int32)
+        # 11. Reshape the array and send it to the polygon line function.
+        thePoints = thePoints.reshape((-1, 1, 2))
