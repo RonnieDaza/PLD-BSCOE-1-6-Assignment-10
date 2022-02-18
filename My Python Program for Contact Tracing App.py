@@ -44,3 +44,7 @@ while True:
 
         # 15. Create the text file. Set the mode to "a" for the text file to have multiple entries of the data read of the QR code.
         generateTextFile = open("My QR Code Data Read.txt", "a")
+        # 16. Write the data from the QR code.
+        generateTextFile.write(theCode.data.decode("utf-8"))
+        generateTextFile.write(" \n")
+        generateTextFile.write(" \n")
