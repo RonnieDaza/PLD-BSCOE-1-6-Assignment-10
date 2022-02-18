@@ -29,3 +29,5 @@ while True:
     for theCode in decode(theQrCode):
         # 8. Print the type of data.
         print(theCode.type)
+        # 9. Decode the data. Use utf-8.
+        print(theCode.data.decode("utf-8"))
