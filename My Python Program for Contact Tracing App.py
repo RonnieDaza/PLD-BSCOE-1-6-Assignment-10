@@ -12,3 +12,6 @@ from pyzbar.pyzbar import decode
 import cv2
 import numpy as np
 import datetime
+
+# 2. Set the video capture for the webcam.
+webcamCap = cv2.VideoCapture(0)
