@@ -48,3 +48,7 @@ while True:
         generateTextFile.write(theCode.data.decode("utf-8"))
         generateTextFile.write(" \n")
         generateTextFile.write(" \n")
+        # 17. Add the date and time.
+        generateTextFile.write(datetime.datetime.now().__str__() + "\n")
+        generateTextFile.write(" \n")
+        generateTextFile.write(" \n")
