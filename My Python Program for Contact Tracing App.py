@@ -19,3 +19,6 @@ webcamCap = cv2.VideoCapture(0)
 webcamCap.set(3, 640)
 # 4. Set the height of the webcam.
 webcamCap.set(4, 480)
+
+# 5. Create a while loop. Set it to True. This loop will display and decode the data on the QR code everytime it is scanned.
+while True:
