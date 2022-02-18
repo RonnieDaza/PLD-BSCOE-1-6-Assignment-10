@@ -35,3 +35,5 @@ while True:
         thePoints = np.array([theCode.polygon], np.int32)
         # 11. Reshape the array and send it to the polygon line function.
         thePoints = thePoints.reshape((-1, 1, 2))
+        # 12. Create the polygon line function. This will create now the bounding box. Set it to True to close. Set the color. Set the thickness.
+        cv2.polylines(theQrCode, [thePoints], True, (0, 0, 255), 5)
