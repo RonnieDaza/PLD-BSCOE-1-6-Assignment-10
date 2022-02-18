@@ -39,3 +39,5 @@ while True:
         cv2.polylines(theQrCode, [thePoints], True, (0, 0, 255), 5)
         # 13. Find the values of the bounding box.
         thePoints2 = theCode.rect
+        # 14. Put the text above the bounding box. Specify the image which is the QR code. Put the decoded data. Specify the coordinates using the values from thePoints2. Set the font. Set the font scale. Set the font color. Set the font thickness.
+        cv2.putText(theQrCode, theCode.data.decode("utf-8"), (thePoints2[0], thePoints2[1]), cv2.FONT_HERSHEY_PLAIN, 0.9, (0, 0, 255), 2)
