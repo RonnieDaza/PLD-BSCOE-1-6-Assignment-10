@@ -22,3 +22,6 @@ webcamCap.set(4, 480)
 
 # 5. Create a while loop. Set it to True. This loop will display and decode the data on the QR code everytime it is scanned.
 while True:
+
+    # 6. Read the data on the QR code.
+    SUCCESS, theQrCode = webcamCap.read()
