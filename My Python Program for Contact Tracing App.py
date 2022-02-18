@@ -31,3 +31,5 @@ while True:
         print(theCode.type)
         # 9. Decode the data. Use utf-8.
         print(theCode.data.decode("utf-8"))
+        # 10. Add a bounding box. For here, we will use a polygon. Convert the polygon into an array. Use np.int32.
+        thePoints = np.array([theCode.polygon], np.int32)
