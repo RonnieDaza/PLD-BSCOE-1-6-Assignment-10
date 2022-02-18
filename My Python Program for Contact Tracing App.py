@@ -52,3 +52,5 @@ while True:
         generateTextFile.write(datetime.datetime.now().__str__() + "\n")
         generateTextFile.write(" \n")
         generateTextFile.write(" \n")
+        # 18. Close the text file.
+        generateTextFile.close
