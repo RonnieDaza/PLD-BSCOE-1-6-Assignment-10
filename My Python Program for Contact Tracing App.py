@@ -15,3 +15,5 @@ import datetime
 
 # 2. Set the video capture for the webcam.
 webcamCap = cv2.VideoCapture(0)
+# 3. Set the width of the webcam.
+webcamCap.set(3, 640)
