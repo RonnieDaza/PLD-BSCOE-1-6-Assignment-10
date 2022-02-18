@@ -54,3 +54,7 @@ while True:
         generateTextFile.write(" \n")
         # 18. Close the text file.
         generateTextFile.close
+    
+    # 19. Display a window for the webcam.
+    cv2.imshow("Open My Webcam", theQrCode)
+    
