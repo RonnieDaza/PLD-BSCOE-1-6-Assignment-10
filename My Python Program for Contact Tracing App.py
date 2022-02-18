@@ -27,3 +27,5 @@ while True:
     SUCCESS, theQrCode = webcamCap.read()
     # 7. Create a for loop for everytime the webcam scans the QR code.
     for theCode in decode(theQrCode):
+        # 8. Print the type of data.
+        print(theCode.type)
