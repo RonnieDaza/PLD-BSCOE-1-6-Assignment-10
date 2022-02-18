@@ -59,4 +59,6 @@ while True:
     cv2.imshow("Open My Webcam", theQrCode)
     # 20. Set the loading time for the window to open.
     cv2.waitKey(1)
+    # 21. Destroy all the windows.
+    cv2.destroyAllWindows
     
