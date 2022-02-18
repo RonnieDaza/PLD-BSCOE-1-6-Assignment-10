@@ -41,3 +41,6 @@ while True:
         thePoints2 = theCode.rect
         # 14. Put the text above the bounding box. Specify the image which is the QR code. Put the decoded data. Specify the coordinates using the values from thePoints2. Set the font. Set the font scale. Set the font color. Set the font thickness.
         cv2.putText(theQrCode, theCode.data.decode("utf-8"), (thePoints2[0], thePoints2[1]), cv2.FONT_HERSHEY_PLAIN, 0.9, (0, 0, 255), 2)
+
+        # 15. Create the text file. Set the mode to "a" for the text file to have multiple entries of the data read of the QR code.
+        generateTextFile = open("My QR Code Data Read.txt", "a")
